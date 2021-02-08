@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="assets/BMICLogo.png">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- custom CSS     -->
+  <link rel="stylesheet" href="all.css">
+  <title>BMI Calculator</title>
+</head>
+
+<body>
+  <div class="main">
+    <div class="logo">
+      <img src="assets/BMICLogo.png" alt="BMILogo">
+    </div>
+    <!-- 輸入身高體重 -->
+    <div class="inputArea">
+      <label>身高 cm
+        <input type="text" class="heightInfo" placeholder="請輸入身高">
+      </label>
+      <label>體重 kg
+        <input type="text" class="weightInfo" placeholder="請輸入體重">
+      </label>
+    </div>
+
+    <div class="result">
+      <!-- 看結果按鈕 -->
+      <a href="javascript:;" class="getResult">看結果</a>
+      <!-- 顯示BMI計算結果 -->
+      <div class="gotResult">
+        <!-- 垃圾桶按鈕 -->
+        <i class="material-icons backBtn">loop</i>
+        <p>
+          <span class="BMINum">24.69</span>
+          <br>BMI
+        </p>
+        <span class="resultText"></span>
+      </div>
+    </div>
+
+  </div>
+
+  <section class="recordArea">
+    <h2>BMI 紀錄</h2>
+    <!-- 資料的位置 -->
+    <div class="record">
+      <div class="list">
+        <span class="recordLevel">標準</span>
+        <div class="recordTitle">BMI
+          <span class="recordBmi">24.69</span>
+        </div>
+        <div class="recordTitle">weight
+          <span class="recordWeight">80kg</span>
+        </div>
+        <div class="recordTitle">height
+          <span class="recordHeight">180cm</span>
+        </div>
+        <div class="recordDate">2020-12-22</div>
+        <i class="material-icons remove" data-num="0">delete</i>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">
+    <img class="footerLogo" src="assets/BMICLogob.png" alt="BMILogo">
+  </div>
+
+  <!-- 客製JS -->
+  <script src="all.js"></script>
+
+</body>
+
+</html>
