@@ -38,6 +38,12 @@
   font-size: 24px;
 }
 
+.inputArea:focus, .weightInfo:focus{
+  outline:none;
+  border: 2px solid orange;
+  transition: 0.3s;
+}
+
 .main .result {
   position: relative;
 }
